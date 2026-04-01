@@ -1,0 +1,8 @@
+# Ignore local environment and build artifacts
+venv/
+__pycache__/
+*.pyc
+
+# Ignore raw dataset files and very large temporary artifacts
+data/
+similarity_matrix.pkl

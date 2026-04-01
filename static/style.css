@@ -1,0 +1,84 @@
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    font-weight: bold;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: transform 0.2s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.form-control:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+.list-group-item {
+    border: none;
+    padding: 15px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #f8f9ff, #e8ecff);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.list-group-item:hover {
+    transform: translateX(10px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+}
+
+#results h5 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.banner-card {
+    background: linear-gradient(135deg, rgba(45, 55, 85, 0.95), rgba(67, 56, 202, 0.95));
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.banner-card h5 {
+    font-size: 1.35rem;
+    letter-spacing: 0.02em;
+}
+
+.banner-card p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+#bannerTagline {
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+#bannerMeta {
+    color: rgba(255, 255, 255, 0.65);
+}
+
