@@ -5,10 +5,15 @@ import re
 from sklearn.metrics.pairwise import cosine_similarity
 import os
 import pickle
+import os
 
 app = Flask(__name__)
-PROCESSED_PATH = 'processed_movies.pkl'
-TFIDF_PATH = 'tfidf.pkl'
+
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+PROCESSED_PATH = os.path.join(BASE_DIR, "processed_movies.pkl")
+TFIDF_PATH = os.path.join(BASE_DIR, "tfidf.pkl")
 
 
 def load_pickle(path):
