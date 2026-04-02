@@ -17,11 +17,14 @@ TFIDF_PATH = os.path.join(BASE_DIR, "tfidf.pkl")
 
 
 def load_pickle(path):
+    import pickle
     if not os.path.exists(path):
-        raise FileNotFoundError(
-            f"Required artifact '{path}' not found. Run prepare_data.py locally and commit the generated files for deployment."
-        )
-    with open(path, 'rb') as f:
+        print("Current Dir:", os.getcwd())
+        print("Looking for:", path)
+        print("Files available:", os.listdir())
+        raise FileNotFoundError(f"{path} not found")
+    
+    with open(path, "rb") as f:
         return pickle.load(f)
 
 
